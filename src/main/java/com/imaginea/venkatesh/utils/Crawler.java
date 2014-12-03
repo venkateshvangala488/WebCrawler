@@ -44,11 +44,9 @@ public class Crawler {
 					Pattern pattern = Pattern.compile(hrefPattern);
 					Matcher matcherLink = pattern.matcher(href);
 					while (matcherLink.find()) {
-						LOGGER.info(href);
 						selectedUrls.add(href);
 					}
 				} else {
-					LOGGER.info(href);
 					selectedUrls.add(href);
 				}
 			}

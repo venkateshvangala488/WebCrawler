@@ -1,6 +1,6 @@
 package com.imaginea.venkatesh.apacheconfig;
 
-public class ApacheConfig {
+public class ApacheCrawlerConfig {
 	private String yearHrefPattern = "\\s*{year}\\d{2}.mbox/thread";
 	private String paginationPattern =  yearHrefPattern + "?";
 	private String mailHrefPattern = "\\s*({year}\\d{2}.mbox/%3c)|({year}\\d{2}.mbox/ajax/%3c)";

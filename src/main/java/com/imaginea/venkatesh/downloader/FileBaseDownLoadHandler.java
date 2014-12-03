@@ -22,6 +22,7 @@ public class FileBaseDownLoadHandler implements DownLoadHandler {
 	}
 
 	public void handle(String url, InputStream inputStream, String fileName) throws IOException {
+		LOGGER.info("Downloading Content Url {}", url);
 		String filePath = rootDir + "/" + fileName;
 		File file = new File(filePath);
 		if (!file.exists()) {
